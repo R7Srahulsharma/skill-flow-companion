@@ -27,124 +27,125 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-purple-100 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
+    <div className="min-h-screen bg-gradient-luxury">
+      {/* Premium Header */}
+      <header className="glass-effect sticky top-0 z-50 luxury-shadow">
+        <div className="container mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-white" />
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center glow-effect floating-animation">
+                <Sparkles className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Domestika AI</h1>
-                <p className="text-sm text-gray-600">Creative Assistant</p>
+                <h1 className="text-2xl font-bold font-display gradient-text">Domestika AI</h1>
+                <p className="text-sm text-muted-foreground font-medium">Premium Creative Assistant</p>
               </div>
             </div>
-            <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-              Beta Prototype
+            <Badge className="gradient-secondary text-secondary-foreground font-semibold px-4 py-2 rounded-xl">
+              Elite Edition
             </Badge>
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="text-center max-w-4xl mx-auto">
-          <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Brain className="w-4 h-4" />
-            <span>AI-Powered Creative Learning</span>
+      {/* Premium Hero Section */}
+      <section className="container mx-auto px-6 py-24 relative">
+        <div className="absolute inset-0 bg-gradient-glow opacity-40"></div>
+        <div className="text-center max-w-5xl mx-auto relative z-10">
+          <div className="inline-flex items-center space-x-3 glass-effect px-6 py-3 rounded-full text-sm font-semibold mb-8 animate-fade-in-up">
+            <Brain className="w-5 h-5 text-primary" />
+            <span className="gradient-text">Next-Generation AI Creative Intelligence</span>
           </div>
           
-          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Learn, Practice & Share
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"> Faster</span>
+          <h1 className="text-7xl font-bold font-display mb-8 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            Master, Create &
+            <span className="gradient-text block"> Transcend</span>
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Your AI creative companion that guides you through personalized skill journeys, 
-            provides intelligent feedback, and connects you with the right peers and masters.
+          <p className="text-2xl text-muted-foreground mb-12 leading-relaxed font-light animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            The world's most sophisticated AI creative companion. Tailored mastery paths, 
+            revolutionary feedback systems, and exclusive access to elite creative networks.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="gradient-primary text-primary-foreground px-10 py-4 text-xl rounded-xl luxury-shadow hover:shadow-glow transition-all duration-500 pulse-glow"
               onClick={() => setActiveFlow('journey')}
             >
-              <BookOpen className="w-5 h-5 mr-2" />
-              Start Your Journey
+              <BookOpen className="w-6 h-6 mr-3" />
+              Begin Elite Journey
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-purple-200 hover:border-purple-300 text-purple-700 px-8 py-3 text-lg rounded-xl"
+              className="glass-effect premium-border text-foreground px-10 py-4 text-xl rounded-xl hover:bg-accent transition-all duration-300"
               onClick={() => setActiveFlow('feedback')}
             >
-              <Camera className="w-5 h-5 mr-2" />
-              Get AI Feedback
+              <Camera className="w-6 h-6 mr-3" />
+              Premium Analysis
             </Button>
           </div>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/60 backdrop-blur-sm">
-            <CardHeader className="text-center pb-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Brain className="w-8 h-8 text-white" />
+        {/* Premium Feature Cards */}
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <Card className="glass-effect premium-border luxury-shadow hover:shadow-glow transition-all duration-500 floating-animation">
+            <CardHeader className="text-center pb-4">
+              <div className="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 glow-effect">
+                <Brain className="w-10 h-10 text-primary-foreground" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Personalized Learning</CardTitle>
+              <CardTitle className="text-2xl font-display text-foreground">Neural Mastery</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <CardDescription className="text-gray-600 leading-relaxed">
-                AI analyzes your style, pace, and goals to create custom learning paths that adapt as you grow.
+              <CardDescription className="text-muted-foreground leading-relaxed text-lg">
+                Revolutionary AI that understands your unique creative DNA and crafts impossible-to-replicate learning journeys.
               </CardDescription>
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/60 backdrop-blur-sm">
-            <CardHeader className="text-center pb-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-white" />
+          <Card className="glass-effect premium-border luxury-shadow hover:shadow-glow transition-all duration-500 floating-animation" style={{animationDelay: '1s'}}>
+            <CardHeader className="text-center pb-4">
+              <div className="w-20 h-20 gradient-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 glow-effect">
+                <Sparkles className="w-10 h-10 text-secondary-foreground" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Intelligent Feedback</CardTitle>
+              <CardTitle className="text-2xl font-display text-foreground">Quantum Feedback</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <CardDescription className="text-gray-600 leading-relaxed">
-                Get instant, detailed critiques on your work with actionable suggestions for improvement.
+              <CardDescription className="text-muted-foreground leading-relaxed text-lg">
+                Instantaneous, molecular-level analysis of your work with surgical precision recommendations from master-level AI.
               </CardDescription>
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/60 backdrop-blur-sm">
-            <CardHeader className="text-center pb-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
+          <Card className="glass-effect premium-border luxury-shadow hover:shadow-glow transition-all duration-500 floating-animation" style={{animationDelay: '2s'}}>
+            <CardHeader className="text-center pb-4">
+              <div className="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 glow-effect">
+                <Users className="w-10 h-10 text-primary-foreground" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Smart Community</CardTitle>
+              <CardTitle className="text-2xl font-display text-foreground">Elite Network</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <CardDescription className="text-gray-600 leading-relaxed">
-                Connect with the right peers and mentors at the perfect moment in your creative journey.
+              <CardDescription className="text-muted-foreground leading-relaxed text-lg">
+                Exclusive access to the world's top 1% of creatives, with AI-orchestrated introductions at perfect moments.
               </CardDescription>
             </CardContent>
           </Card>
         </div>
 
-        {/* Skills Grid */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Popular Creative Skills</h2>
-          <p className="text-gray-600 mb-8">Choose your creative domain and let AI guide your growth</p>
+        {/* Premium Skills Portfolio */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold font-display text-foreground mb-6">Master Elite Disciplines</h2>
+          <p className="text-xl text-muted-foreground mb-12">Transcend conventional boundaries with AI-powered mastery acceleration</p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-            {skillCategories.map((skill) => (
-              <Card key={skill.name} className="border-0 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer group bg-white/60 backdrop-blur-sm">
-                <CardContent className="p-6 text-center">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 ${skill.color}`}>
-                    <skill.icon className="w-6 h-6" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {skillCategories.map((skill, index) => (
+              <Card key={skill.name} className="glass-effect premium-border luxury-shadow hover:shadow-glow transition-all duration-500 cursor-pointer group pulse-glow" style={{animationDelay: `${index * 0.2}s`}}>
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 glow-effect group-hover:scale-110 transition-transform duration-300">
+                    <skill.icon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
+                  <h3 className="font-semibold font-display text-foreground group-hover:gradient-text transition-all duration-300 text-lg">
                     {skill.name}
                   </h3>
                 </CardContent>
