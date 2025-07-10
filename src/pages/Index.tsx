@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -37,7 +36,7 @@ const Index = () => {
                 <Sparkles className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold font-display gradient-text">Domestika AI</h1>
+                <h1 className="text-2xl font-bold font-display text-white">Domestika AI</h1>
                 <p className="text-sm text-muted-foreground font-medium">Premium Creative Assistant</p>
               </div>
             </div>
@@ -57,12 +56,12 @@ const Index = () => {
             <span className="gradient-text">Next-Generation AI Creative Intelligence</span>
           </div>
           
-          <h1 className="text-7xl font-bold font-display mb-8 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+          <h1 className="text-7xl font-bold font-display mb-8 leading-tight animate-fade-in-up text-white" style={{animationDelay: '0.2s'}}>
             Master, Create &
             <span className="gradient-text block"> Transcend</span>
           </h1>
           
-          <p className="text-2xl text-muted-foreground mb-12 leading-relaxed font-light animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+          <p className="text-2xl text-gray-300 mb-12 leading-relaxed font-light animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             The world's most sophisticated AI creative companion. Tailored mastery paths, 
             revolutionary feedback systems, and exclusive access to elite creative networks.
           </p>
